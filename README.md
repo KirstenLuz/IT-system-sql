@@ -1,20 +1,15 @@
-# Medical Clinic SQL Project
+## About the Project
 
-This project was developed to practice **database modeling** and **SQL query writing** using **PostgreSQL**.
-It simulates the operations of a **medical clinic system**, including data about patients, doctors, specializations, appointments, and treatments.
+The **IT Support System SQL Project** was developed to practice **database modeling** and **SQL querying** using **PostgreSQL**, simulating a **technical support ticketing system**.
+
+This project mirrors how IT departments manage **users, clients, technicians, tickets, and messages**, ensuring data integrity and efficient information tracking.
 
 ---
 
 ## Objective
 
-The goal is to design and implement a **relational database** capable of managing a clinic’s main data while maintaining **data consistency** and enabling **data analysis through SQL**.
-
-This project demonstrates practical knowledge in:
-
-* Database design and normalization;
-* Table relationships (1:N, N:N);
-* Query optimization and organization;
-* Use of joins, filters, and aggregations.
+Design a **relational database** capable of handling support requests, tracking progress, and associating each ticket with its respective client and technician.
+The main goal is to demonstrate an understanding of **data modeling**, **relational structure**, and **query development** for analysis and reporting.
 
 ---
 
@@ -22,60 +17,60 @@ This project demonstrates practical knowledge in:
 
 **Main Entities:**
 
-* **Patients** – personal information, contact details, and address.
-* **Doctors** – name, specialization, and contact information.
-* **Specializations** – list of medical specialties.
-* **Appointments** – date, reason, patient, doctor, and observations.
-* **Treatments** – medicines and medical prescriptions.
+* **Users** – general user registry (clients or technicians)
+* **Clients** – organizations that open tickets, linked to a user
+* **Technicians** – employees responsible for solving tickets
+* **Tickets** – records of support requests, including category, status, and timestamps
+* **Messages** – communication logs between users about each ticket
 
-Each entity is connected through **foreign keys**, ensuring relational integrity between patients, doctors, and treatments.
+The structure ensures **referential integrity** through foreign keys and cascading rules (`ON DELETE CASCADE`, `ON UPDATE CASCADE`).
 
 ---
 
 ## Project Structure
 
 ```
-medical-clinic-sql/
+it-support-system-sql/
 │
-├── sql/                   # SQL scripts
-│   ├── 01_create_tables.sql  → database schema creation
-│   ├── 02_insert_data.sql    → realistic data insertion
-│   ├── 03_insert_data_II.sql → complementary insertions
-│   └── 04_queries.sql        → SQL queries for practice
+├── sql/                    # SQL scripts
+│   ├── 01_create_tables.sql   → database schema creation
+│   ├── 02_insert_data.sql     → realistic data insertion
+│   └── 03_queries.sql         → SQL exercises and analysis queries
 │
-├── docs/                  # Documentation and diagrams
-│   └── er-diagram.png        → Entity Relationship Diagram (ERD)
+├── docs/                   # Documentation and diagrams
+│   ├── it_support_ERD.png     → Entity Relationship Diagram (ERD)
+│   ├── base_text.pdf          → project explanation and context
+│   └── query_exercises.pdf    → queries used for analysis
 │
 └── README.md
 ```
 
 ---
 
-## Technologies Used
+## ⚙️ Technologies Used
 
 * **PostgreSQL 15+**
 * **SQL (ANSI Standard)**
-* **pgAdmin / DBeaver** – for visualization and testing
-* **Canva / Draw.io** – for ER diagram creation
+* **pgAdmin / DBeaver** – database management and testing
+* **Canva / Draw.io** – ER diagram creation
 
 ---
 
-## How to Run
+## 🚀 How to Run
 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/SEU_USUARIO/medical-clinic-sql.git
-   cd medical-clinic-sql
+   git clone https://github.com/SEU_USUARIO/it-support-system-sql.git
+   cd it-support-system-sql
    ```
 
-2. **Run the SQL scripts in order**
+2. **Execute the SQL scripts in order**
 
    ```bash
    psql -U <username> -d <database> -f sql/01_create_tables.sql
    psql -U <username> -d <database> -f sql/02_insert_data.sql
-   psql -U <username> -d <database> -f sql/03_insert_data_II.sql
-   psql -U <username> -d <database> -f sql/04_queries.sql
+   psql -U <username> -d <database> -f sql/03_queries.sql
    ```
 
 ---
