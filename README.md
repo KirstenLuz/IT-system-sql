@@ -1,14 +1,14 @@
 ## IT Support System SQL Project
 
-This project was developed as an exercise in modeling and SQL queries, focusing on fundamental practices for those training as Data Analysts.
-The goal is to simulate a technical support system, with users, customers, technicians, tickets, and messages.
+This project was developed as an exercise in **data modeling** and **SQL queries**, focusing on core practices for those training as **Data Analysts**.
+The goal is to simulate a **technical support system**, including **users**, **clients**, **technicians**, **tickets**, and **messages**.
 
 ---
 
 ## Objective
 
 Design a **relational database** capable of handling support requests, tracking progress, and associating each ticket with its respective client and technician.
-The main goal is to demonstrate an understanding of **data modeling**, **relational structure**, and **query development** for analysis and reporting.
+The main goal is to demonstrate an understanding of **data modeling**, **relational structure**, and **query development** for **analysis and reporting**.
 
 ---
 
@@ -22,7 +22,7 @@ The main goal is to demonstrate an understanding of **data modeling**, **relatio
 * **Tickets** – records of support requests, including category, status, and timestamps
 * **Messages** – communication logs between users about each ticket
 
-The structure ensures **referential integrity** through foreign keys and cascading rules (`ON DELETE CASCADE`, `ON UPDATE CASCADE`).
+The structure ensures **referential integrity** through **foreign keys** and cascading rules (`ON DELETE CASCADE`, `ON UPDATE CASCADE`).
 
 ---
 
@@ -46,7 +46,7 @@ it-support-system-sql/
 
 ---
 
-## ⚙️ Technologies Used
+## Technologies Used
 
 * **PostgreSQL 15+**
 * **SQL (ANSI Standard)**
@@ -55,7 +55,7 @@ it-support-system-sql/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 1. **Clone the repository**
 
@@ -73,3 +73,6 @@ it-support-system-sql/
    ```
 
 ---
+
+
+> Educational project for SQL modeling, query development, and data analysis practice.
