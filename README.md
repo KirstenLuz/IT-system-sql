@@ -37,7 +37,7 @@ it-support-system-sql/
 │   └── 03_queries.sql         → SQL exercises and analysis queries
 │
 ├── docs/                   # Documentation and diagrams
-│   ├── IT_support_ERD.png     → Entity Relationship Diagram (ERD)
+│   ├── IT-system-sql.pdf      → Entity Relationship Diagram (ERD)
 │   ├── base_text.pdf          → project explanation and context
 │   └── query_exercises.pdf    → queries used for analysis
 │
