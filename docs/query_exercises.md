@@ -1,7 +1,7 @@
 # SQL Practice Exercises – IT Support System
 
 Esses exercícios foram criados para praticar consultas SQL em um banco de dados que simula um sistema de suporte técnico (IT Support System).  
-O foco é reforçar o uso de **SELECT**, **JOIN**, **WHERE**, **ORDER BY** e funções agregadas — habilidades fundamentais para um analista de dados.
+O foco é reforçar o uso de **SELECT**, **JOIN**, **WHERE**, **ORDER BY** e funções agregadas.
 
 ## Lista de Exercícios
 
