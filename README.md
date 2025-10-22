@@ -1,8 +1,7 @@
-## About the Project
+## IT Support System SQL Project
 
-The **IT Support System SQL Project** was developed to practice **database modeling** and **SQL querying** using **PostgreSQL**, simulating a **technical support ticketing system**.
-
-This project mirrors how IT departments manage **users, clients, technicians, tickets, and messages**, ensuring data integrity and efficient information tracking.
+This project was developed as an exercise in modeling and SQL queries, focusing on fundamental practices for those training as Data Analysts.
+The goal is to simulate a technical support system, with users, customers, technicians, tickets, and messages.
 
 ---
 
